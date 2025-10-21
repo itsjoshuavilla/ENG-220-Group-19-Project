@@ -59,7 +59,7 @@ Our expected outcome is to have an easily accessible place to view each individu
 - Identify publicly avaliable datasets relevent to project topic.
 - Provide dataset links and justification.
 
-**Name:** Luke Revelo
+**Name:** Luke Revelo**
 **Role:** Data Analyst
 **Contribution:**
 - Data Cleaning & Preprocessing
