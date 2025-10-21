@@ -55,8 +55,10 @@ Our expected outcome is to have an easily accessible place to view each individu
 *(Each member will edit this section after forking the repo and submitting their PRs.)*
 
 **Name:** Jayden Romero**
-**Role:**
-**Contribution:**
+**Role:** Dataset Research and Justification
+**Contribution:** 
+- Identify publicly avaliable datasets relevent to project topic.
+- Provide dataset links and justification.
 - _(To be added)_
 
 **Name:** Luke Revelo**
