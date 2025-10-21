@@ -59,21 +59,22 @@ Our expected outcome is to have an easily accessible place to view each individu
 **Contribution:**
 - _(To be added)_
 
-**Name:** Luke Revelo**
-**Role:**
+**Name:** Luke Revelo
+**Role:** Data Analyst
 **Contribution:**
-- _(To be added)_
+- Data Cleaning & Preprocessing
 
 **Name:** Kyle Pruitt**
-**Role:**
+**Role:** Data Analysis & Visualizations
 **Contribution:**
-- _(To be added)_
+- Write the code for analysis of the cleaned data set.
 
 **Name:** Dylan Lopez**
-**Role:**
+**Role:** Project Visualizer 
 **Contribution:**
-- _(To be added)_
-
+- Producing Visualizations.
+- Visualizing project planning and outcome.
+  
 ---
 
 ## 🏁 Final Conclusion
