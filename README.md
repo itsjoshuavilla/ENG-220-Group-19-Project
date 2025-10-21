@@ -70,10 +70,11 @@ Our expected outcome is to have an easily accessible place to view each individu
 - _(To be added)_
 
 **Name:** Dylan Lopez**
-**Role:**
+**Role:** Project Visualizer 
 **Contribution:**
-- _(To be added)_
-
+- Producing Visualizations.
+- Visualizing project planning and outcome.
+  
 ---
 
 ## 🏁 Final Conclusion
