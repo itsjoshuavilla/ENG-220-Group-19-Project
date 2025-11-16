@@ -4,41 +4,26 @@ import pandas as pd
 st.title("CO₂ Emissions Summary by Country")
 
 st.write(
-    "Upload a CSV file with at least two columns: "
-    "`Country` and `CO2Emission_Tons_`."
+    "Upload the *summary* CSV file with these columns: "
+    "`Country`, `Count`, `Mean`, `Std`, `Min`, `Median`, `Max`, `Sum`."
 )
 
-uploaded_file = st.file_uploader("Upload CO₂ CSV", type=["csv"])
+uploaded_file = st.file_uploader("Upload CO₂ Summary CSV", type=["csv"])
 
 if uploaded_file is not None:
     # Read CSV
     T = pd.read_csv(uploaded_file)
 
-    # Drop missing rows
+    # Drop missing rows (optional)
     T = T.dropna()
 
-    # Column names
-    countryVar = "Country"
-    emissionVar = "CO2Emission_Tons_"
+    required_cols = ["Country", "Count", "Mean", "Std", "Min", "Median", "Max", "Sum"]
+    missing = [c for c in required_cols if c not in T.columns]
 
-    # Check columns exist
-    if countryVar not in T.columns or emissionVar not in T.columns:
-        st.error(f"CSV must contain '{countryVar}' and '{emissionVar}' columns.")
+    if missing:
+        st.error(f"CSV is missing these columns: {', '.join(missing)}")
     else:
-        # Group by country and compute stats
-        grouped = T.groupby(countryVar)[emissionVar]
-
-        Result = grouped.agg(
-            Count="count",
-            Mean="mean",
-            Std="std",
-            Min="min",
-            Median="median",
-            Max="max",
-            Sum="sum"
-        ).reset_index()
-
-        st.subheader("Summary Statistics")
-        st.dataframe(Result)
+        st.subheader("Summary Statistics (from file)")
+        st.dataframe(T)
 else:
-    st.info("Upload a CSV file to see the summary statistics.")
+    st.info("Upload your summary CSV to see the table.")
